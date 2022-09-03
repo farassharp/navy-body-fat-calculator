@@ -22,5 +22,6 @@ app.MapControllerRoute(
     pattern: "{controller}/{action=Index}/{id?}");
 
 app.MapFallbackToFile("index.html"); ;
+ModelBuilderExtensions.Seed(app);
 
 app.Run();

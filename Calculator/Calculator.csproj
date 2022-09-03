@@ -31,7 +31,7 @@
 
   <ItemGroup>
     <Folder Include="Models\DTO\" />
-    <Folder Include="Models\Enum\" />
+    <Folder Include="Utils\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

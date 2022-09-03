@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Calculator.Models.Enum;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -7,6 +8,8 @@ namespace Calculator.Models
 {
     public partial class CalculatorContext : DbContext
     {
+        public DbSet<Formula> Formulas { get; set; }
+        public DbSet<Gender> Genders { get; set; }
         public CalculatorContext()
         {
         }
